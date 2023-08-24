@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Преимущества - Программированние в GEEKS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преимущества курсов по программированию</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Преимущества</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/courses/">Курсы</a></li>
-            <li><a href="/benefits/">Преимущества</a></li>
-            <li><a href="/about/">О нас</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Почему выбрать нас?</h2>
-            <ul>
-                <li>Высококвалифицированные инструкторы с опытом</li>
-                <li>Практическое обучение на реальных проектах</li>
-                <li>Менторская поддержка на протяжении всего курса</li>
-                <li>Возможность получить сертификат об окончании</li>
-                <li>Помощь в трудоустройстве после обучения</li>
-                <li>Бесплатное повторение не понятной для тебя месяца обучения</li>
-                <li>Получение скидки при хорошем обучении</li>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Название вашего сайта</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/courses/">Курсы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/benefits/">Преимущество</a>
+                </li>
             </ul>
-        </section>
-    </main>
-    <footer>
-        <p> 2023 Программирование в "GEEKS"</p>
-    </footer>
+        </div>
+    </div>
+</nav>
+
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Наши преимущества</h2>
+            <img src="data:image/png;base64,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" alt="Веб-разработка" class="img-fluid mb-3">
+            <ul>
+                <li>Курсы, разработанные опытными инструкторами</li>
+                <li>Практический подход к обучению</li>
+                <li>Широкий спектр курсов для всех уровней</li>
+                <li>Гибкий график обучения</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
